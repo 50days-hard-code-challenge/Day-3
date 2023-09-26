@@ -1,0 +1,21 @@
+n=(int(input()))
+odd=int(0)
+even=int(0)
+while(n>0):
+    x=n%10
+    if x%2==0:
+        even=even+x
+    else:
+        odd=odd+x
+    n=n//10
+print(even," ",odd)
+
+# the best solution is as follows
+"""n = input()
+even,odd = 0,0
+
+for num in n:
+    if (int(num)%2 == 0): even += int(num)
+    else: odd += int(num)
+
+print(even,odd)"""
